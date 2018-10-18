@@ -160,7 +160,12 @@ INFO  : Starting task [Stage-0:DDL] in serial mode
 INFO  : Completed executing command(queryId=hive_20181017174444_6a304996-a472-43d0-bc02-02cbe97fc71c); Time taken: 0.143 seconds
 INFO  : OK
 +------------+--+
-
+|  tab_name  |
++------------+--+
+| sample_07  |
++------------+--+
+1 row selected (0.337 seconds)
+0: jdbc:hive2://localhost:10000/default>
 
 
 ```
