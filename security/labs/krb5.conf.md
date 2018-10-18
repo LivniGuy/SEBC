@@ -1,3 +1,4 @@
+```
 [libdefaults]
 default_realm = LIVNIGUY.COM
 dns_lookup_kdc = false
@@ -16,3 +17,4 @@ kdc = 172.31.26.225
 admin_server = 172.31.26.225
 }
 [domain_realm]
+```
