@@ -1,3 +1,4 @@
+```
 [root@ip-172-31-26-225 ec2-user]# curl -X GET -u "LivniGuy:cloudera" -i localhost:7180/api/v2/cm/deployment
 HTTP/1.1 200 OK
 Expires: Thu, 01-Jan-1970 00:00:00 GMT
@@ -998,3 +999,4 @@ Server: Jetty(6.1.26.cloudera.4)
     } ]
   }
 }
+```

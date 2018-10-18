@@ -1,3 +1,4 @@
+```
 [root@ip-172-31-26-225 ec2-user]# curl -X POST -u LivniGuy:cloudera 'http://localhost:7180/api/v1/clusters/LivniGuy/services/hive/commands/stop'
 {
   "id" : 790,
@@ -41,3 +42,4 @@
   } ],
   "configStale" : false
 }
+```
