@@ -58,7 +58,7 @@ tmpfs          tmpfs     1.5G     0  1.5G   0% /run/user/0
 
 ### Disable transparent hugepage support
 
-[root@ip-172-31-26-225 ~]# cat /etc/rc.d/rc.local 
+[root@ip-172-31-26-225 ~]# cat /etc/rc.d/rc.local
 #!/bin/bash
 # THIS FILE IS ADDED FOR COMPATIBILITY PURPOSES
 #
@@ -77,13 +77,13 @@ echo never > /sys/kernel/mm/transparent_hugepage/defrag
 
 [root@ip-172-31-26-225 ~]# cat /sys/kernel/mm/transparent_hugepage/enabled
 [always] madvise never
-[root@ip-172-31-26-225 ~]# cat /sys/kernel/mm/transparent_hugepage/defrag 
+[root@ip-172-31-26-225 ~]# cat /sys/kernel/mm/transparent_hugepage/defrag
 [always] madvise never
 
 [root@ip-172-31-26-225 ~]# echo never > /sys/kernel/mm/transparent_hugepage/enabled
 [root@ip-172-31-26-225 ~]# echo never > /sys/kernel/mm/transparent_hugepage/defrag
 
-[root@ip-172-31-26-225 ~]# cat /sys/kernel/mm/transparent_hugepage/defrag 
+[root@ip-172-31-26-225 ~]# cat /sys/kernel/mm/transparent_hugepage/defrag
 always madvise [never]
 [root@ip-172-31-26-225 ~]# cat /sys/kernel/mm/transparent_hugepage/enabled
 always madvise [never]
@@ -121,22 +121,22 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 74.125.193.99   STREAM www.google.com
 74.125.193.99   DGRAM  
 74.125.193.99   RAW    
-74.125.193.103  STREAM 
+74.125.193.103  STREAM
 74.125.193.103  DGRAM  
 74.125.193.103  RAW    
-74.125.193.104  STREAM 
+74.125.193.104  STREAM
 74.125.193.104  DGRAM  
 74.125.193.104  RAW    
-74.125.193.105  STREAM 
+74.125.193.105  STREAM
 74.125.193.105  DGRAM  
 74.125.193.105  RAW    
-74.125.193.106  STREAM 
+74.125.193.106  STREAM
 74.125.193.106  DGRAM  
 74.125.193.106  RAW    
-74.125.193.147  STREAM 
+74.125.193.147  STREAM
 74.125.193.147  DGRAM  
 74.125.193.147  RAW    
-2a00:1450:400b:c00::93 STREAM 
+2a00:1450:400b:c00::93 STREAM
 2a00:1450:400b:c00::93 DGRAM  
 2a00:1450:400b:c00::93 RAW
 
@@ -195,7 +195,7 @@ Oct 15 13:56:52 ip-172-31-26-225.eu-west-1.compute.internal ntpd[17747]: 0.0.0.0
 
 
 ### MySQL/MariaDB Installation Lab:
-sudo yum install mariadb-server
+sudo yum install mariadb-server -y
 
 [root@ip-172-31-26-225 ~]# ll /var/lib/mysql/
 total 0
@@ -260,33 +260,33 @@ MariaDB [(none)]> SHOW SLAVE STATUS \G
         Relay_Master_Log_File: mysql_binary_log.000003
              Slave_IO_Running: Connecting
             Slave_SQL_Running: Yes
-              Replicate_Do_DB: 
-          Replicate_Ignore_DB: 
-           Replicate_Do_Table: 
-       Replicate_Ignore_Table: 
-      Replicate_Wild_Do_Table: 
-  Replicate_Wild_Ignore_Table: 
+              Replicate_Do_DB:
+          Replicate_Ignore_DB:
+           Replicate_Do_Table:
+       Replicate_Ignore_Table:
+      Replicate_Wild_Do_Table:
+  Replicate_Wild_Ignore_Table:
                    Last_Errno: 0
-                   Last_Error: 
+                   Last_Error:
                  Skip_Counter: 0
           Exec_Master_Log_Pos: 3961
               Relay_Log_Space: 245
               Until_Condition: None
-               Until_Log_File: 
+               Until_Log_File:
                 Until_Log_Pos: 0
            Master_SSL_Allowed: No
-           Master_SSL_CA_File: 
-           Master_SSL_CA_Path: 
-              Master_SSL_Cert: 
-            Master_SSL_Cipher: 
-               Master_SSL_Key: 
+           Master_SSL_CA_File:
+           Master_SSL_CA_Path:
+              Master_SSL_Cert:
+            Master_SSL_Cipher:
+               Master_SSL_Key:
         Seconds_Behind_Master: NULL
 Master_SSL_Verify_Server_Cert: No
                 Last_IO_Errno: 1045
                 Last_IO_Error: error connecting to master 'replication_user@ec2-34-250-35-168.eu-west-1.compute.amazonaws.com:3306' - retry-time: 10  retries: 86400  message: Access denied for user 'replication_user'@'ip-172-31-19-244.eu-west-1.compute.internal' (using password: YES)
                Last_SQL_Errno: 0
-               Last_SQL_Error: 
-  Replicate_Ignore_Server_Ids: 
+               Last_SQL_Error:
+  Replicate_Ignore_Server_Ids:
              Master_Server_Id: 0
 1 row in set (0.00 sec)
 
@@ -353,8 +353,3 @@ sudo yum install cloudera-manager-daemons cloudera-manager-server
 sudo service cloudera-scm-server start
 
 2018-10-15 16:24:34,132 INFO WebServerImpl:com.cloudera.server.cmf.WebServerImpl: Started Jetty server.
-
-
-
-
-
