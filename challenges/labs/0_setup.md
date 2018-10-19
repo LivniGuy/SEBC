@@ -73,3 +73,9 @@ Could not contact any CDS load balancers: rhui2-cds01.eu-west-1.aws.ce.redhat.co
 raffles:x:2000:2000::/home/raffles:/bin/bash
 fullerton:x:3000:3000::/home/fullerton:/bin/bash
 ```
+
+### cat /etc/group for hotels and shops:
+```
+shops:x:3001:raffles
+hotels:x:3002:fullerton
+```
